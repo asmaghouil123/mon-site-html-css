@@ -2,45 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    table,th,td{border:2px solid blue ;
-    width: 50%;
-    height: 80px;}
-    img{width:60px;
-    height: 80px;}
+    label{
+
+        display: inline-block;
+        margin: 10px;
+        width: 120px;}
 </style>
 <body>
-    <table>
-        <caption>bibliotheques</caption>
+    <form action="" method="post">
+        <table>
         <tr>
+            <td><label for="">votre pseudo</label></td>
+                <td><input type="text"></td></tr>
+           
+           
+                <tr><td><label for="">votre mot de passe</label></td>
+                <td><input type="password"></td></tr>
             
-            <th>image</th>
-            <th>titre</th>
-            <th>auteur</th>
-            <th>anee</th>
-        </tr>
-        <tr>
-            <td>
-                <img src="imge1.jpg" width="60%" height="80px"></td>
-            </td>
-            <td>UML 2 par la pratique</td>
-            <td>pascal robotiques</td>
-            <td>1992</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="image2.jpg" width="60%" height="80px">
-            </td>
-            <td>khan al khalili</td>
-            <td>naguib mahfouth</td>
-            <td>1946</td>
-        </tr>
-        <tr>
-            <td colspan="4">l'emprunt d'un livre ne doit pas deppaser 1 semaine</td>
-        </tr>
-    </table>
+           
+                <label for="">ressaisir votre mot de passe</label>
+                <input type="password"><br>
+            <tr>
+            <td><label>os prefere</label></td>
+           <td> <input type="radio">windows xp<br>
+            <input type="radio">windows vista<br>
+            <input type="radio">macOSK<br>
+            <input type="radio">Linux<br>
+            <input type="radio">Autre</td></tr>
+           
+            
+            <tr><td><label for="" rowspan="4">vous possedez</label></td>
+           <td> <input type="checkbox">un ordinateur de bureau<br>
+            <input type="checkbox">un poratable<br>
+           <input type="checkbox">un netbook<br>
+            <input type="checkbox">une tablette(pad)<br></td></tr>
+            
+            
+                <label>votre profession</label>
+                <select >
+                    <option >chomeur</option>
+                    <option >etudiant</option>
+                    <option >fonctionnaire</option>
+                    <option >prive</option>
+                </select><br>
+               <tr>
+                <td> <label><input type="submit" value="s'inscrie"></label></td>
+                </tr>
+              
+                
+                
+            
+        </table>
+
+    </form>
 </body>
 </html>
