@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table,td,th{border: 1px solid black;
+        border-collapse: collapse;}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action="traitement.php" method="post">
-        <table>
-            <tr>
-        <label>
-           <td> votre pseudo</td>
-        </label>
-       <td> <input type="text" name=""></td></tr><br>
+    <table>
+        <caption>repartition des etudiants</caption>
         <tr>
-        <label>
-            <td>votre mot de passe </td></label>
-       <td> <input type="password" name=""></td></tr><br>
-        
-       <tr>
-        <td><label for="raisons">vos raisons de vous inscrire sur ce site</label></td>
-        <td><textarea id="raisons"></textarea></td>
-       </tr>
+            <th>classe</th>
+            <th>TI 101</th>
+            <th>TI 102</th>
+            <th>TI 105</th>
+
+        </tr>
+        <tr>
+            <th>nombre</th>
+            <td>28</td>
+            <td>25</td>
+            <td>29</td>
+        </tr>
     </table>
-    </form>
     
 </body>
 </html>
